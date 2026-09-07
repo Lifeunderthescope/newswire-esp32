@@ -1,0 +1,4 @@
+textual==8.2.8
+websockets==17.1
+plyer==2.1.0
+pyfiglet==1.0.4

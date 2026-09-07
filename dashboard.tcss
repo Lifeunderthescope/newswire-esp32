@@ -1,0 +1,58 @@
+Screen {
+    background: #060d13;
+    color: #b9d3d9;
+    layout: vertical;
+}
+#masthead {
+    height: 1;
+    background: #10302a;
+    color: #65f5a2;
+    text-style: bold;
+    padding: 0 1;
+}
+#device-status {
+    height: 2;
+    padding: 0 1;
+    border-bottom: solid #23434c;
+}
+#device-status.online { color: #65f5a2; }
+#device-status.offline { color: #ffb869; text-style: bold; }
+#boot-banner {
+    height: auto;
+    max-height: 6;
+    color: #57dcf5;
+    content-align: center middle;
+}
+#channels {
+    height: 1fr;
+    grid-size: 2 2;
+    grid-columns: 1fr 1fr;
+    grid-rows: 1fr 1fr;
+    grid-gutter: 0 1;
+    padding: 0 1;
+}
+.channel { height: 1fr; border: solid #23434c; background: #0a151d; }
+.channel:focus-within { border: double #b9d3d9; }
+.channel-title { height: 1; padding: 0 1; text-style: bold; }
+#panel-cybersecurity { border: solid #923c4c; }
+#title-cybersecurity { color: #ff6174; background: #2d1720; }
+#panel-networking { border: solid #267288; }
+#title-networking { color: #57dcf5; background: #102a36; }
+#panel-tech { border: solid #28714e; }
+#title-tech { color: #65f5a2; background: #102b25; }
+#panel-privacy { border: solid #6b418a; }
+#title-privacy { color: #e18bff; background: #241c36; }
+ListView { height: 1fr; background: transparent; scrollbar-size: 1 1; }
+NewsRow { height: auto; padding: 1; border-bottom: solid #19303a; }
+NewsRow Label { width: 1fr; height: auto; }
+ListView > NewsRow.-highlight { background: #203844; }
+ListView:focus > NewsRow.-highlight { background: #284756; }
+NewsRow.critical { border-left: thick #ff6174; }
+#feed-status { height: 2; padding: 0 1; color: #78929c; background: #0b1922; }
+Footer { background: #10302a; }
+Detail { align: center middle; background: #03080dcc; }
+#detail-box { width: 85%; height: 70%; border: double #57dcf5; padding: 1 2; background: #0a151d; }
+#detail-heading { height: 2; color: #57dcf5; text-style: bold; }
+#detail-box VerticalScroll { height: 1fr; }
+#detail-box Static { height: auto; }
+#detail-url { color: #65f5a2; }
